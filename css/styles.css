@@ -1,0 +1,46 @@
+header{
+    border: 3px solid lime;
+    width: 99%;
+    margin: 5px auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.container{
+    display: flex;
+    max-width: 99%;
+}
+
+form{
+    border: 3px solid black;
+    margin: 2px;
+    display: block;
+}
+
+.form-left,
+.form-right{
+    flex: 1;
+    height: 300px;
+}
+
+.form-left{
+    border:3px solid red;
+    margin-left: 5%;
+    margin-right: 2%;
+    text-indent: 39%;
+}
+
+.form-right{
+    border: 3px solid blue;
+    margin:0 5% 0 2%;
+}
+
+
+input[type="text"],
+label
+{
+    display: block;
+    margin: 5px auto;
+}
+
+
