@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vacation Destination Wishlist</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header>
-        <h1 id="title">Vacation Destination Wishlist</h1>
-        <p id="description">Have you found your next vacation hotspot? Use the form below to add them to your wishlist.</p>
+      <h1 id="title">Vacation Destination Wishlist</h1>
+      <p id="description">
+        Have you found your next vacation hotspot? Use the form below to add
+        them to your wishlist.
+      </p>
     </header>
     <div class="container">
-        <form id="wishlist-information-form" class="form-left">
-            <label for="name" id="name-label">Destination Name:</label>
-            <input type="text" id="name" placeholder="Enter the name of the destination" required>
+      <form id="wishlist-information-form" class="form-left">
+        <div class="form-row">
+          <label for="name" id="name-label">Destination Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter the name of the destination"
+            required
+          />
 
-            <label for="location" id="location-label">Location:</label>
-            <input type="text" id="location" placeholder="Where is it located?">
+          <label for="location" id="location-label">Location:</label>
+          <input type="text" id="location" placeholder="Where is it located?" />
 
-            <label for="photo" id="photo-label">Photo</label>
-            <input type="text" id="photo" placeholder="Enter an image URL of the location.">
+          <label for="photo" id="photo-label">Photo</label>
+          <input
+            type="text"
+            id="photo"
+            placeholder="Enter an image URL of the location."
+          />
 
-            <label for="description" id="description-label">Description</label>
-            <input type="text" id="description" placeholder="What stands out to you about the location.">
+          <label for="description" id="description-label">Description</label>
+          <input
+            type="text"
+            id="description"
+            placeholder="What stands out to you about the location."
+          />
+        </div>
+        <button type="submit" id="submit">Add to list</button>
+      </form>
 
-            <button type="submit" id="submit">Add to list</button>
-        </form>
-    
+      <form id="destination-detail-form" class="form-right">
+        <label for="destination-details"></label>
+        <textarea
+          id="destination-details"
+          placeholder="Enter Destination Details"
+          cols="30"
+          rows="10"
+        ></textarea>
 
-        <form id="destination-detail-form" class="form-right">
-            <label for="destination-details"></label>
-            <textarea id="destination-details" placeholder="Enter Destination Details" cols="30" rows="10"></textarea>
-
-            <section>CurrentPlaceHolder-dont know what goes here yet!!!</section>
-        </form>
+        <section>CurrentPlaceHolder-dont know what goes here yet!!!</section>
+      </form>
     </div>
-</body>
+  </body>
 </html>
